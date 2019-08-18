@@ -9,7 +9,7 @@ public class BeanConfig {
 	  @Bean
 	    public EmbeddedServletContainerCustomizer containerCustomizer() {
 	        return (container -> {
-	            container.setPort(8000);
+	            container.setPort(8001);
 	        });
 	    }
 
