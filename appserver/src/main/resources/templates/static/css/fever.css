@@ -1,0 +1,40 @@
+#center {
+    margin:-3rem auto;
+    width:1200px;
+    min-width: 300px;
+    min-height: 90%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+div .headerbar{
+    max-width: 1200px;
+    min-height: inherit;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.hide{
+    display: none;
+}
+
+.box-border-none {
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+.accessToken, .deviceUuid {
+    max-width: 130px;
+}
+
+.crlf {
+    word-break:break-all;
+}
