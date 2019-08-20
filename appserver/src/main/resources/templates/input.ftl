@@ -25,6 +25,7 @@
         <a  onclick="return searching();" class="ui tag label">
             저장 
         </a>
+        
     </div>
     <br/>
 </div>
