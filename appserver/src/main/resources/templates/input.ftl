@@ -18,17 +18,29 @@
 <body>
 <#include "header.ftl">
 <br/>
-<div style="margin: 20px 20px 20px 20px;max-width: 150px" >
-    <div style="position:absolute; right: 0%; y-index:2;" class="ui right labeled left icon input">
-        <i class="tags icon"></i>
-        <input id="title" name="title" type="text" placeholder="제목을 입력하세요" value="">
-        <a  onclick="return searching();" class="ui tag label">
-            저장 
-        </a>
-    </div>
-    <br/>
+<br/>
+<br/>
+<div class="ui action input">
+  <input type="text" placeholder="Search...">
+  <button class="ui icon button">
+    <i class="search icon"></i>
+  </button>
 </div>
-
+<div class="ui form">
+  <div class="field">
+    <label>Text</label>
+    <textarea></textarea>
+  </div>
+  <div class="field">
+    <label>Short Text</label>
+    <textarea rows="2"></textarea>
+  </div>
+</div>
+<img class="ui medium bordered image" src="/images/wireframe/white-image.png">
+<button class="ui active button">
+  <i class="user icon"></i>
+  Save
+</button>
 </body>
 
 </html>
