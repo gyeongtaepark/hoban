@@ -28,12 +28,12 @@
 </div>
 <div class="ui form">
   <div class="field">
-    <label>Text</label>
-    <textarea></textarea>
-  </div>
-  <div class="field">
     <label>Short Text</label>
     <textarea rows="2"></textarea>
+  </div>
+  <div class="field">
+    <label>Text</label>
+    <textarea></textarea>
   </div>
 </div>
 <img class="ui medium bordered image" src="/images/wireframe/white-image.png">
