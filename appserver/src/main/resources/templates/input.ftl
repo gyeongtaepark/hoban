@@ -20,11 +20,9 @@
 <br/>
 <br/>
 <br/>
-<div class="ui action input">
-  <input type="text" placeholder="Search...">
-  <button class="ui icon button">
-    <i class="search icon"></i>
-  </button>
+<div class="ui fluid icon input">
+  <input type="text" placeholder="Search a very wide input...">
+  <i class="search icon"></i>
 </div>
 <div class="ui form">
   <div class="field">
@@ -36,7 +34,7 @@
     <textarea></textarea>
   </div>
 </div>
-<img class="ui medium bordered image" src="/images/wireframe/white-image.png">
+<!--img class="ui medium bordered image" src="/images/wireframe/white-image.png"-->
 <button class="ui active button">
   <i class="user icon"></i>
   Save
