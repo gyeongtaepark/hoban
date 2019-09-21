@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* COMMON */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table,h1,h2,h3,h4,h5{font-family:"Helvetica Neue","Apple SD Gothic Neo",sans-serif;font-weight:500;font-size:15px;line-height:1.267em}
+body{position:relative;background-color:#eff2f8;color:#000;word-break:break-all;-webkit-text-size-adjust:none}
+html{font-size:10px;line-height:15px}
+table{border-collapse:collapse}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0.1)}
+img{vertical-align:top}
+mark{color:inherit;font-weight:bold;background:none}
+input,button{-webkit-border-radius:0;border-radius:0;background:none}
+/* COMMON HIDE */
+.u_vc,.u_hc,.u_skip,.blind{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
+.u_vc::before,.u_hc::before,.u_skip::before,.blind::before{display:block;width:0;height:0;content:'\00a0';font-size:0}
+.notify_card.nc_delivery .nc_service::before,.notify_card.nc_delivery .nc_btn_shortcut::before,.notify_card.nc_order .nc_service::before,.notify_card.nc_gift .nc_btn_shortcut::before,.notify_card.nc_gift .nc_btn_shortcut.nc_btn_dim::before,.notify_card.nc_like .nc_service::before,.notify_card.nc_congrats .nc_service::before,.notify_card.nc_congrats .nc_btn_shortcut::before,.notify_card.nc_support .nc_btn_shortcut::before,.notify_card.nc_follow .nc_service::before,.notify_card.nc_reply .nc_service::before,.nc_service::before,.ico_nc_video,.ico_nc_audio,.ico_nc_live,.ico_nc_live_end,.ico_nc_coupon,.nc_btn_shortcut::before,.nc_btn_shortcut.nc_btn_dim::before{background-image:url("../im/sp_aside_notify.png");-webkit-background-size:151px 131px;background-size:151px 131px;background-repeat:no-repeat}
+html,body{background-color:#f5f7fa}
+.main_title{padding:0 20px;font-weight:bold;font-size:22px;line-height:65px;letter-spacing:-0.7px;color:#23282f}
+.notify_card_list{padding:0 17px}
+.notify_card{overflow:hidden;margin-bottom:10px;padding:14px 15px;-webkit-border-radius:10px;border-radius:10px;background-color:rgba(255,255,255,0.9);-webkit-box-shadow:0 1px 1px 0 rgba(54,59,65,0.08);box-shadow:0 1px 1px 0 rgba(54,59,65,0.08)}
+.notify_card.nc_visited{background-color:#edf0f5}
+.notify_card.nc_banner{padding:0}
+.notify_card.nc_delivery .nc_service{background-image:-webkit-gradient(linear,left top,left bottom,from(#87adfd),to(#7c7deb));background-image:-webkit-linear-gradient(top,#87adfd,#7c7deb);background-image:linear-gradient(to bottom,#87adfd,#7c7deb)}
+.notify_card.nc_delivery .nc_service::before{width:21px;height:14px;background-position:-50px -92px;margin-top:13px}
+.notify_card.nc_delivery .nc_btn_shortcut{color:#749bfc;border-color:#749bfc}
+.notify_card.nc_delivery .nc_btn_shortcut::before{width:15px;height:19px;background-position:-136px 0px;margin:7.5px 6.5px 0 0}
+.notify_card.nc_order .nc_service::before{width:22px;height:16px;background-position:-79px -65px;margin-top:12px}
+.notify_card.nc_gift .nc_btn_shortcut::before{width:16px;height:17px;background-position:-45px -114px}
+.notify_card.nc_gift .nc_btn_shortcut.nc_btn_dim::before{width:16px;height:17px;background-position:-66px -114px}
+.notify_card.nc_like .nc_service{background-image:-webkit-gradient(linear,left top,left bottom,from(#ffa084),to(#ff496f));background-image:-webkit-linear-gradient(top,#ffa084,#ff496f);background-image:linear-gradient(to bottom,#ffa084,#ff496f)}
+.notify_card.nc_like .nc_service::before{width:20px;height:17px;background-position:0px -92px;margin-top:11.5px}
+.notify_card.nc_congrats .nc_service{background-image:-webkit-gradient(linear,left top,left bottom,from(#ff709b),to(#c649ff));background-image:-webkit-linear-gradient(top,#ff709b,#c649ff);background-image:linear-gradient(to bottom,#ff709b,#c649ff)}
+.notify_card.nc_congrats .nc_service::before{width:22px;height:22px;background-position:0px -65px;margin-top:9px}
+.notify_card.nc_congrats .nc_btn_shortcut{color:#f77f85;border-color:#f77f85}
+.notify_card.nc_congrats .nc_btn_shortcut::before{width:18px;height:17px;background-position:0px -114px}
+.notify_card.nc_support .nc_service{background-image:-webkit-gradient(linear,left top,left bottom,from(#ffd462),to(#ff9b61));background-image:-webkit-linear-gradient(top,#ffd462,#ff9b61);background-image:linear-gradient(to bottom,#ffd462,#ff9b61)}
+.notify_card.nc_support .nc_btn_shortcut{color:#fea464;border-color:#fea464}
+.notify_card.nc_support .nc_btn_shortcut::before{width:17px;height:17px;background-position:-23px -114px}
+.notify_card.nc_follow .nc_service{background-image:-webkit-gradient(linear,left top,left bottom,from(#41eb9c),to(#11b6a9));background-image:-webkit-linear-gradient(top,#41eb9c,#11b6a9);background-image:linear-gradient(to bottom,#41eb9c,#11b6a9)}
+.notify_card.nc_follow .nc_service::before{width:23px;height:21px;background-position:-27px -65px;margin-top:9px}
+.notify_card.nc_reply .nc_service{background-image:-webkit-gradient(linear,left top,left bottom,from(#76dbf7),to(#668cee));background-image:-webkit-linear-gradient(top,#76dbf7,#668cee);background-image:linear-gradient(to bottom,#76dbf7,#668cee)}
+.notify_card.nc_reply .nc_service::before{width:20px;height:20px;background-position:-111px -29px;margin-top:10px}
+.nc_banner_a{display:block;-webkit-border-radius:inherit;border-radius:inherit}
+.nc_banner_a .nc_banner_img{-webkit-border-radius:inherit;border-radius:inherit}
+.nc_service{width:40px;height:40px;float:left;position:relative;margin-top:1px;-webkit-border-radius:20px;border-radius:20px;color:transparent;background-image:-webkit-gradient(linear,left top,left bottom,from(#18e993),to(#05ca5d));background-image:-webkit-linear-gradient(top,#18e993,#05ca5d);background-image:linear-gradient(to bottom,#18e993,#05ca5d)}
+.nc_service::before{content:"";display:block;width:20px;height:16px;background-position:-25px -92px;margin:12px auto 0}
+.nc_service::after{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;border:solid 1px rgba(0,0,0,0.05);-webkit-border-radius:inherit;border-radius:inherit}
+.nc_service .nc_pf_img{position:absolute;top:0;left:0;right:0;bottom:0;width:40px;height:40px;-webkit-border-radius:inherit;border-radius:inherit}
+.nc_live_on .nc_service{width:48px;height:48px;margin:-3px 0 0 -4px;-webkit-border-radius:24px;border-radius:24px;background:-webkit-linear-gradient(123deg,#ff0031,#ff6c83);background:linear-gradient(327deg,#ff0031,#ff6c83)}
+.nc_live_on .nc_service::before{display:none}
+.nc_live_on .nc_service .nc_pf_img{margin:2px 0 0 2px;border:2px solid #fff}
+.nc_cont_group{overflow:hidden;padding-left:12px}
+.nc_cont{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:start;-webkit-align-items:flex-start;align-items:flex-start}
+.nc_mw{float:right;position:relative;margin:1px 0 0 10px;-webkit-border-radius:8px;border-radius:8px}
+.nc_mw .nc_m{-webkit-border-radius:inherit;border-radius:inherit}
+.nc_mw::after{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;border:1px solid rgba(0,0,0,0.02);-webkit-border-radius:inherit;border-radius:inherit}
+.nc_audio .nc_mw{-webkit-border-radius:30px;border-radius:30px}
+.nc_tw{overflow:hidden;-webkit-box-flex:1;-webkit-flex:1;flex:1}
+.ico_nc_video{position:absolute;top:50%;left:50%;width:20px;height:24px;background-position:-111px 0px;overflow:hidden;margin:-12px 0 0 -10px;color:transparent}
+.ico_nc_audio{position:absolute;top:0;left:0;right:0;bottom:0;width:60px;height:60px;background-position:0px 0px;overflow:hidden;color:transparent}
+.ico_nc_live{width:31px;height:16px;background-position:-65px -21px;display:inline-block;overflow:hidden;margin-right:3px;white-space:nowrap;color:transparent;vertical-align:-2px}
+.ico_nc_live_end{width:31px;height:16px;background-position:-65px -42px;display:inline-block;overflow:hidden;margin-right:3px;white-space:nowrap;color:transparent;vertical-align:-2px}
+.ico_nc_coupon{width:41px;height:16px;background-position:-65px 0px;display:inline-block;overflow:hidden;margin-right:3px;white-space:nowrap;color:transparent;vertical-align:-2px}
+.nc_title{font-weight:400;font-size:16px;line-height:21px;letter-spacing:-0.3px;color:#222}
+.nc_title .nc_em{font-weight:bold;color:#40579a}
+.nc_desc{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-weight:400;font-size:16px;line-height:20px;letter-spacing:-0.3px;color:#9c9e9f}
+.nc_grid_thumbs{overflow:hidden;padding:6px 0 4px;margin:0 -2px;font-size:0;line-height:0;white-space:nowrap}
+.nc_grid{position:relative;display:inline-block;margin:0 2px;-webkit-border-radius:8px;border-radius:8px;vertical-align:top}
+.nc_grid::after{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;border:1px solid rgba(0,0,0,0.02);-webkit-border-radius:inherit;border-radius:inherit}
+.nc_grid > img{-webkit-border-radius:inherit;border-radius:inherit}
+.nc_grid_more::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;-webkit-border-radius:inherit;border-radius:inherit;background-color:rgba(0,0,0,0.5)}
+.nc_grid_more .nc_more{position:absolute;top:50%;right:0;left:0;margin-top:-12px;font-size:20px;line-height:24px;letter-spacing:-0.5px;color:#fff;text-align:center}
+.nc_cite{overflow:hidden;height:17px;padding-top:4px;font-weight:400;font-size:14px;line-height:17px;color:#97a4b9;letter-spacing:-0.3px}
+.nc_cite .nc_c{display:inline-block;vertical-align:top}
+.nc_cite .nc_c + .nc_c::before{content:"";display:inline-block;width:3px;height:3px;margin:7px 4px 0 -1px;background-color:#dfe3ea;-webkit-border-radius:50%;border-radius:50%;vertical-align:top}
+.nc_link{padding-top:12px}
+.nc_btn_shortcut{display:block;font-weight:bold;font-size:14px;line-height:34px;letter-spacing:-0.3px;color:#46d67d;border:1px solid #46d67d;-webkit-border-radius:4px;border-radius:4px;text-align:center}
+.nc_btn_shortcut::before{content:"";display:inline-block;width:19px;height:19px;background-position:-55px -65px;margin:7.5px 4.5px 0 0;vertical-align:top}
+.nc_btn_shortcut.nc_btn_dim{color:#c8ccd2;border-color:#e1e4e9}
+.nc_btn_shortcut.nc_btn_dim::before{width:19px;height:19px;background-position:-111px -54px}
+/* 배포버전 확인용 워터마크 */
+/*!
+/* {{@timestamp@}},NHN technology services,ch4feel@nhn.com */

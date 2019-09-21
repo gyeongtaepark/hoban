@@ -18,6 +18,11 @@
 <body>
 <#include "header.ftl">
 <br/>
+<br/>
+new로 만든 클래스로 얻은 작성자 : ${nick} <br/>
+
+<img src=${img} />
+
 <div style="margin: 20px 20px 20px 20px;max-width: 150px" >
     <div style="position:absolute; right: 0%; y-index:2;" class="ui right labeled left icon input">
         <i class="tags icon"></i>

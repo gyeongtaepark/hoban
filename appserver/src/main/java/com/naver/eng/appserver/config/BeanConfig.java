@@ -6,11 +6,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class BeanConfig {
-	  @Bean
-	    public EmbeddedServletContainerCustomizer containerCustomizer() {
-	        return (container -> {
-	            container.setPort(8000);
-	        });
-	    }
+	@Bean
+	public EmbeddedServletContainerCustomizer containerCustomizer() {
+		return (container -> {
+			container.setPort(8000);
+		});
+	}
 
 }
