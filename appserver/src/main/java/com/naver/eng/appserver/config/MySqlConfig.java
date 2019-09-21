@@ -11,6 +11,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 @Configuration
 public class MySqlConfig {
 	//Bean Factory 안에 넣어라
+	// kenneth2 커밋
 	@Bean
 	public JdbcTemplate datasource() throws Exception {
 		Properties properties = new Properties();
