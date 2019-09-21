@@ -16,6 +16,7 @@ public class MySqlConfig {
 		Properties properties = new Properties();
 
 		properties.setProperty("username", "fever");
+		
 		properties.setProperty("password", "1234");
 		properties.setProperty("url",
 				"jdbc:mysql://192.168.99.101:32803/sample?autoReconnect=true&useTimezone=true&serverTimezone=UTC&cacheServerConfiguration=true&elideSetAutoCommits=true&connectTimeout=5000&socketTimeout=3000&useUnicode=true&characterEncoding=utf-8");
