@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 public class App {
 	public static void main(String[] args) {
 		
+		//주석추가.
 		
 		SpringApplication.run(App.class, args);
 	}
