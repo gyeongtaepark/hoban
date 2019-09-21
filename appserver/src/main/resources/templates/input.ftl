@@ -19,6 +19,11 @@
 <#include "header.ftl">
 <br/>
 <br/>
+new class 로 작성된 작성자 : ${nick}
+<br/>
+spring에서 온 클래스로 작성된 작성자 : ${nick1}
+<br/>
+<img src = ${img}/>
 <br/>
 <div class="ui fluid icon input">
   <input type="text" placeholder="Search a very wide input...">
