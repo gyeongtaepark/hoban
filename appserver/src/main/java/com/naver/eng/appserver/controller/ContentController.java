@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.naver.eng.appserver.business.NickName;
 import com.naver.eng.appserver.exception.SqlException;
@@ -27,7 +29,9 @@ public class ContentController
 	ProductDAO productDAO;
 	
 	@RequestMapping("/input")
-    public Object input(Map<String, Object> model) throws Exception {
+    public Object input(Map<String, Object> model,
+    		@RequestHeader(value = HttpHeaders.USER_AGENT, required = false) String userAgent,
+    		@RequestParam(value = "data", required = false, defaultValue = "") String data) throws Exception {
 
 		
 		

@@ -9,7 +9,7 @@
             if(document.getElementById("title").value.trim() == ""){
                 alert("제목을 입력하세요.");
             }else{
-                document.location = '/search?workId=' + document.getElementById("title").value;
+                document.location = '/search?data=' + document.getElementById("title").value;
             }
         }
     </script>

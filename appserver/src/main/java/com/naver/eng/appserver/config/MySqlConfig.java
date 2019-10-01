@@ -20,7 +20,7 @@ public class MySqlConfig {
 		//ㅇ헝ㅎㅇ헝허
 		properties.setProperty("password", "1234");
 		properties.setProperty("url",
-				"jdbc:mysql://192.168.99.101:32769/sample?autoReconnect=true&useTimezone=true&serverTimezone=UTC&cacheServerConfiguration=true&elideSetAutoCommits=true&connectTimeout=5000&socketTimeout=3000&useUnicode=true&characterEncoding=utf-8");
+				"jdbc:mysql://192.168.99.101:32770/sample?autoReconnect=true&useTimezone=true&serverTimezone=UTC&cacheServerConfiguration=true&elideSetAutoCommits=true&connectTimeout=5000&socketTimeout=3000&useUnicode=true&characterEncoding=utf-8");
 
 		BasicDataSource createDataSource = BasicDataSourceFactory.createDataSource(properties);
 		
