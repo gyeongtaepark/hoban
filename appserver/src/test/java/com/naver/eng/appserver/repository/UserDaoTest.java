@@ -23,7 +23,7 @@ public class UserDaoTest {
 	public void selectTest() {
 		userDao.delete("kingssnow");
 		
-		userDao.insert("kingssnow", "aaa", "1234","우리집", "00000", "박촐뉨.");
+		userDao.insert("kingssnow", "aaa", "1234","", "","asdasd");
 		
 		List<Map<String, Object>> select = userDao.select("kingssnow");
 		

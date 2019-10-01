@@ -24,6 +24,7 @@ public class UserDao {
 		jdbcTemplate.update(sql, userid, name, password,address, zipcode, nickName);
 	}
 
+	
 	public void delete(String userid) {
 		String sql = "DELETE FROM user WHERE userid = ?";
 		
