@@ -16,8 +16,18 @@ public class ProductDAO {
 	JdbcTemplate jdbcTemplate;
 
 	public List<Map<String, Object>> selectProduct(String id) {
-		 return jdbcTemplate.queryForList("SELECT * FROM sample.user where id = '"+id+ "'");
+		 return jdbcTemplate.queryForList("SELECT * FROM sample.user where userid = '"+id+ "'");
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public void insertProduct(String id, String name, String nickname) throws SqlException {
 		String 

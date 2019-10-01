@@ -30,16 +30,20 @@ public class ContentController
 	
 	@RequestMapping("/input")
     public Object input(Map<String, Object> model,
-    		@RequestHeader(value = HttpHeaders.USER_AGENT, required = false) String userAgent,
-    		@RequestParam(value = "data", required = false, defaultValue = "") String data) throws Exception {
+    		@RequestParam(value = "data", required = false, defaultValue = "") String data,
+    		@RequestParam(value = "title", required = false, defaultValue = "") String title
+        	) throws Exception {
 
-		
+		System.out.println("data===" + data);
+		System.out.println("title===" + title);
 		
 		List<Map<String, Object>> queryForList = productDAO.selectProduct("id1");
+		
 		model.put("nick", queryForList.get(0).get("name"));
 		
 		try {
 			productDAO.insertProduct("333", "aa1a","QQQQa");
+			
 			System.out.println("DB에서 가져온 데이터 :" +productDAO.selectProduct("333"));
 		}catch (SqlException e) {
 			model.put("nick", "저장을 실패하였습니다.");
