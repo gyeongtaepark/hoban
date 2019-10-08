@@ -27,14 +27,38 @@ public class ContentController
 	
 	@Autowired
 	ProductDAO productDAO;
+
+	@RequestMapping("/join")
+    public Object join(Map<String, Object> model) {
+		return "join";
+	}
+
+	@RequestMapping("/save")
+    public Object save(Map<String, Object> model,
+    		@RequestParam(value = "title", required = false) String title,
+    		@RequestParam(value = "name", required = false) String name
+        	) throws Exception {
+		
+		System.out.println("화면에서 전달받은 title===" + title);
+		System.out.println("화면에서 전달받은 name===" + name);
+
+		model.put("title", title);
+		model.put("name", name);
+		return "save";
+	}
+
+	
+	
 	
 	@RequestMapping("/input")
     public Object input(Map<String, Object> model,
-    		@RequestParam(value = "data", required = false, defaultValue = "") String data,
-    		@RequestParam(value = "title", required = false, defaultValue = "") String title
+    		@RequestParam(value = "title", required = false, defaultValue = "") String title,
+    		@RequestParam(value = "name", required = false, defaultValue = "") String name
         	) throws Exception {
 
-		System.out.println("data===" + data);
+		
+		
+		System.out.println("data===" + name);
 		System.out.println("title===" + title);
 		
 		List<Map<String, Object>> queryForList = productDAO.selectProduct("id1");
